@@ -57,7 +57,7 @@ class HomeCubit extends Cubit<HomeState> {
       print(e.toString());
       emit(state.copyWith(
         status: HomeStatus.error,
-        message: "Server error",
+        message: "Internet not connection",
       ));
     }
   }
@@ -75,7 +75,7 @@ class HomeCubit extends Cubit<HomeState> {
         } else {
           emit(state.copyWith(
             status: HomeStatus.error,
-            message: "Tidak ditemukan",
+            message: "Not found",
           ));
         }
       } else {
@@ -88,7 +88,7 @@ class HomeCubit extends Cubit<HomeState> {
       print(e.toString());
       emit(state.copyWith(
         status: HomeStatus.error,
-        message: "Server error",
+        message: "Internet not connection",
       ));
     }
   }

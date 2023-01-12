@@ -77,9 +77,9 @@ class _SettingScreenState extends State<SettingScreen> {
                   child: ListTile(
                     onTap: () async {
                       await canLaunchUrlString(
-                              "https://www.linkedin.com/in/rifat-khadafy-b05378159/")
+                              "https://id.linkedin.com/in/subkh4n")
                           ? await launchUrlString(
-                              "https://www.linkedin.com/in/rifat-khadafy-b05378159/")
+                              "https://id.linkedin.com/in/subkh4n")
                           : throw 'Could not launch ';
                     },
                     contentPadding:
@@ -89,14 +89,14 @@ class _SettingScreenState extends State<SettingScreen> {
                       child: Container(
                           height: 60,
                           child: Image.asset(
-                            "assets/me.jpeg",
+                            "assets/subhan.png",
                             height: 60,
                             width: 60,
                             fit: BoxFit.cover,
                           )),
                     ),
                     title: Text(
-                      "Rifat Khadafy",
+                      "Moh Subhan",
                       style: TextStyle(
                         fontSize: 20,
                       ),

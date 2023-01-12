@@ -56,7 +56,7 @@ class DetailCubit extends Cubit<DetailState> {
         }
         return emit(state.copyWith(
           status: DetailStatus.error,
-          message: "error",
+          message: "Internet not connection",
         ));
       }
       emit(state.copyWith(status: DetailStatus.loading));

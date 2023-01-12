@@ -49,18 +49,17 @@ class BookmarkCubit extends Bloc<BookmarkEvent, BookmarkState> {
       if (data != null) {
         if (data.isEmpty) {
           yield (state.copyWith(
-              status: BookmarkStatus.error, message: "Belum ada favorite"));
+              status: BookmarkStatus.error, message: "there's not favorite"));
         } else {
           yield (state.copyWith(status: BookmarkStatus.success, data: data));
         }
       } else {
-        yield (state.copyWith(
-            status: BookmarkStatus.error, message: "Terjadi error"));
+        yield (state.copyWith(status: BookmarkStatus.error, message: "error"));
       }
     } catch (e) {
       print(e);
       yield (state.copyWith(
-          status: BookmarkStatus.error, message: "Terjadi error"));
+          status: BookmarkStatus.error, message: "there is an error"));
     }
   }
 }
