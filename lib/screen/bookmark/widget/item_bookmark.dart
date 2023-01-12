@@ -48,8 +48,10 @@ Widget itemBookmark(
                   tag: detail.pictureId ?? "",
                   child: ClipRRect(
                     borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(300),
-                    ),
+                        topRight: Radius.circular(10),
+                        bottomRight: Radius.circular(10),
+                        topLeft: Radius.circular(25),
+                        bottomLeft: Radius.circular(25)),
                     child: CachedNetworkImage(
                       imageUrl: detail.pictureId != null
                           ? "https://restaurant-api.dicoding.dev/images/medium/${detail.pictureId}"
